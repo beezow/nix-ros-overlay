@@ -65,7 +65,6 @@ in {
   ];
 
   gazebo_9 = self.libsForQt5.callPackage ./gazebo/9.nix { };
-  gazebo_fix = self.libsForQt5.callPackage ./gazebo/fix.nix { };
   gazebo_11 = self.libsForQt5.callPackage ./gazebo { };
   gazebo = self.gazebo_11;
 
