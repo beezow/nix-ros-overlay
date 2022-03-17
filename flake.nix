@@ -18,5 +18,9 @@
     }) // {
       overlay = import ./overlay.nix;
       nixosModule = import ./modules;
+      defaultTemplate = {
+        path = ./examples/flake;
+        description = "nix flake new -t github:beezow/nix-ros-overlay .";
+      };
     };
 }
